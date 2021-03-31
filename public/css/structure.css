@@ -1,0 +1,188 @@
+body {
+    font-family: "Segoe UI", "DejaVu Sans",Verdana, sans-serif;
+    background-image:-webkit-linear-gradient(#9f0909, #4e0000);
+    background-image:-o-linear-gradient(#9f0909, #4e0000);
+    background-image:linear-gradient(#9f0909, #4e0000);
+    background-size: 1rem 200rem;
+    font-size:0.8em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #000000;
+}
+.monBody #container {
+    width: 80%;
+    margin: 0 auto;
+    background:#ffffff;
+}
+.monBody #header {
+    height:140px;
+    background-color:#000;
+    color:#fff;
+}
+
+.menu_haut {background-color:#000;color:#fff;margin-top:-13px;width:100%;}
+.menu_haut ul {
+	width:100%;
+	text-align:center;
+	height:30px;
+	margin-left:-50px;
+	margin-right:-50px;
+	}
+.menu_haut li {
+	text-decoration:none;
+	font-weight:bold;
+	display:inline;
+	font-size:14px;
+	padding:10px 10px 10px 10px;
+	color:#fff;
+	}
+.menu_haut li a {
+	color: #fff;
+	text-decoration: none;
+	display: inline;
+	height: 100%;
+	border: 0 none;
+}
+.menu_haut li a:hover {
+	color:#000;
+	background:#eee;
+}
+
+.monBody #contenu {
+    padding:20px;
+    overflow: auto;
+}
+.monBody #footer {
+    padding: 0 10px;
+    font-size:0.8em;
+    text-align:center;
+    height:150px;
+    background:url(../images/footer.jpg) no-repeat;
+}
+.baniere{float:left;
+  margin-top:20px;
+  margin-left:5px;
+  border:none;}
+.baniere img{
+  border:none;
+}
+
+#LogoNode {
+    max-height: 20%;
+    max-width: 20%;
+}
+
+a  {
+    text-decoration:none;
+    color:#0072ff;
+}
+
+.traitVertical {
+  border-left: 1px white solid;
+}
+
+div .LInit{
+   display: inline-block;
+}
+
+.touteslesphotos img{
+    width: 200px;
+}
+
+.apparait {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    background-color: white;
+    transition: visibility,opacity 0.2s ease-in-out;
+    top: 15px;
+}
+.survol{
+    display: flex;
+    justify-content: center;
+}
+
+.survol:hover .apparait {
+    visibility: visible;
+    display: flex;
+    margin: 0px 0px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    max-width: 40vh;
+    min-height: 15vh;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    box-shadow: 5px 5px 15px #333;
+    opacity: 1;
+    z-index: 999999;
+    transition: visibility,opacity 0.2s ease-in-out;
+}
+
+.text{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5px;
+    text-align: justify;
+}
+
+.Article_personne {
+  float: right;
+  width: 190px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: black;
+
+}
+
+.Article p {
+  text-align: left;
+  border: 1px solid black;
+  width: 600px;
+  padding: 5px;
+}
+
+a  {
+    text-decoration:none;
+    color:#0072ff;
+}
+
+.Article p a {
+  position: relative;
+  top: 5px;
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.Article_personne p {
+  background-color: white;
+  margin: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 5px;
+
+}
+
+.Article_personne p a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+h5 {
+  font-weight: normal;
+  position: relative;
+  text-align: left;
+  float: left;
+  top: 5px;
+  left: 7px;
+  margin: 0px;
+  padding: 2px;
+  background-color: white;
+}
+
+.apparait img{
+    width: 100px;
+}

@@ -1,0 +1,18 @@
+{{> articleVips}}
+
+<h5> Article </h5>
+
+<div class="Article">
+
+    <p>
+      <a href="/repertoireDetails/{{articlePersonne.VIP_NUMERO}}">
+        {{articlePersonne.VIP_PRENOM}} {{articlePersonne.VIP_NOM}}
+      </a> <br> <br>
+      {{articlePersonne.ARTICLE_RESUME}}
+      <br> <br>
+      [Ajouté le {{formatDate articlePersonne.ARTICLE_DATE_INSERT 'DD MMMM YYYY'}}]
+      <a href="/repertoireDetails/{{articlePersonne.VIP_NUMERO}}">
+        Voir sa fiche
+      </a>
+    </p>
+</div>

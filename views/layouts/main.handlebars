@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="shortcut icon" type="image/png" href="/css/etoile.ico" sizes="16x16"/>
+        <link rel="stylesheet" href="/css/structure.css" />
+        <link href="/css/lightbox.css" rel="stylesheet" />
+        <script src="/js/lightbox-plus-jquery.min.js"></script>
+        <title> {{title}}</title>
+    </head>
+    <body class="monBody">
+        <div id="container">
+            <div id="header">
+                <div class="baniere"><img src="/images/sixvoix.png" alt="SIXVOIX l'encyclopédie des stars" /> </div>
+            </div>
+            <div class="menu_haut">
+              <ul>
+                <li><a href="/accueil">ACCUEIL</a></li>
+                <li class="traitVertical"><a href="/repertoire">REPERTOIRE DES STARS</a></li>
+                <li class="traitVertical"><a href="/album">ALBUM PHOTO</a></li>
+                <li class="traitVertical"><a href="/articles">ARTICLES</a></li>
+              </ul>
+            </div>
+            <div id="contenu">
+                <br/>
+                <br/>
+                {{{body}}}
+            </div>
+            <div id="footer">
+                L'encyclopédie des stars depuis février 2021 (en NodeJS)
+                <br />
+                © IUT du Limousin DUT Informatique année 2
+                <br />
+                Application réalisée par Maxime CONSTANS et NGUYEN
+                <br />
+                <img src="/images/nodejs.png" id= "LogoNode" alt="Logo NodeJs" title="Logo Node.JS" />
+            </div>
+        </div>
+        <script src="/js/jquery.js"></script>
+        <script src="/js/lightbox.js"></script>
+
+        <!-- Development -->
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+        <!-- Production -->
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script>
+            tippy('a.name', {
+                content(reference) {
+                    const data = reference.getAttribute('data');
+                    return data;
+                },
+                allowHTML: true,
+            })
+        </script>
+    </body>
+</html>
